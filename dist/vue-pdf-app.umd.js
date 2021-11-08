@@ -44904,13 +44904,13 @@ var PDFViewerApplication = {
       });
     };
 
-    window.addEventListener("visibilitychange", webViewerVisibilityChange);
-    window.addEventListener("wheel", webViewerWheel, {
-      passive: false
-    });
+    window.addEventListener("visibilitychange", webViewerVisibilityChange); // window.addEventListener("wheel", webViewerWheel, {
+    //   passive: false
+    // });
+
     window.addEventListener("click", webViewerClick);
-    window.addEventListener("keydown", webViewerKeyDown);
-    window.addEventListener("resize", _boundEvents.windowResize);
+    window.addEventListener("keydown", webViewerKeyDown); // window.addEventListener("resize", _boundEvents.windowResize);
+
     window.addEventListener("hashchange", _boundEvents.windowHashChange);
     window.addEventListener("beforeprint", _boundEvents.windowBeforePrint);
     window.addEventListener("afterprint", _boundEvents.windowAfterPrint);
@@ -45000,15 +45000,15 @@ var PDFViewerApplication = {
   },
   unbindWindowEvents: function unbindWindowEvents() {
     var _boundEvents = this._boundEvents;
-    window.removeEventListener("visibilitychange", webViewerVisibilityChange);
-    window.removeEventListener("wheel", webViewerWheel);
+    window.removeEventListener("visibilitychange", webViewerVisibilityChange); // window.removeEventListener("wheel", webViewerWheel);
+
     window.removeEventListener("click", webViewerClick);
-    window.removeEventListener("keydown", webViewerKeyDown);
-    window.removeEventListener("resize", _boundEvents.windowResize);
+    window.removeEventListener("keydown", webViewerKeyDown); //window.removeEventListener("resize", _boundEvents.windowResize);
+
     window.removeEventListener("hashchange", _boundEvents.windowHashChange);
     window.removeEventListener("beforeprint", _boundEvents.windowBeforePrint);
-    window.removeEventListener("afterprint", _boundEvents.windowAfterPrint);
-    _boundEvents.windowResize = null;
+    window.removeEventListener("afterprint", _boundEvents.windowAfterPrint); //_boundEvents.windowResize = null;
+
     _boundEvents.windowHashChange = null;
     _boundEvents.windowBeforePrint = null;
     _boundEvents.windowAfterPrint = null;
@@ -50336,37 +50336,35 @@ var PDFPresentationMode = /*#__PURE__*/function () {
     key: "_addWindowListeners",
     value: function _addWindowListeners() {
       this.showControlsBind = this._showControls.bind(this);
-      this.mouseDownBind = this._mouseDown.bind(this);
-      this.mouseWheelBind = this._mouseWheel.bind(this);
+      this.mouseDownBind = this._mouseDown.bind(this); //this.mouseWheelBind = this._mouseWheel.bind(this);
+
       this.resetMouseScrollStateBind = this._resetMouseScrollState.bind(this);
-      this.contextMenuBind = this._contextMenu.bind(this);
-      this.touchSwipeBind = this._touchSwipe.bind(this);
+      this.contextMenuBind = this._contextMenu.bind(this); //this.touchSwipeBind = this._touchSwipe.bind(this);
+
       window.addEventListener("mousemove", this.showControlsBind);
-      window.addEventListener("mousedown", this.mouseDownBind);
-      window.addEventListener("wheel", this.mouseWheelBind);
+      window.addEventListener("mousedown", this.mouseDownBind); //window.addEventListener("wheel", this.mouseWheelBind);
+
       window.addEventListener("keydown", this.resetMouseScrollStateBind);
-      window.addEventListener("contextmenu", this.contextMenuBind);
-      window.addEventListener("touchstart", this.touchSwipeBind);
-      window.addEventListener("touchmove", this.touchSwipeBind);
-      window.addEventListener("touchend", this.touchSwipeBind);
+      window.addEventListener("contextmenu", this.contextMenuBind); // window.addEventListener("touchstart", this.touchSwipeBind);
+      // window.addEventListener("touchmove", this.touchSwipeBind);
+      // window.addEventListener("touchend", this.touchSwipeBind);
     }
   }, {
     key: "_removeWindowListeners",
     value: function _removeWindowListeners() {
       window.removeEventListener("mousemove", this.showControlsBind);
-      window.removeEventListener("mousedown", this.mouseDownBind);
-      window.removeEventListener("wheel", this.mouseWheelBind);
+      window.removeEventListener("mousedown", this.mouseDownBind); //window.removeEventListener("wheel", this.mouseWheelBind);
+
       window.removeEventListener("keydown", this.resetMouseScrollStateBind);
-      window.removeEventListener("contextmenu", this.contextMenuBind);
-      window.removeEventListener("touchstart", this.touchSwipeBind);
-      window.removeEventListener("touchmove", this.touchSwipeBind);
-      window.removeEventListener("touchend", this.touchSwipeBind);
+      window.removeEventListener("contextmenu", this.contextMenuBind); // window.removeEventListener("touchstart", this.touchSwipeBind);
+      // window.removeEventListener("touchmove", this.touchSwipeBind);
+      // window.removeEventListener("touchend", this.touchSwipeBind);
+
       delete this.showControlsBind;
-      delete this.mouseDownBind;
-      delete this.mouseWheelBind;
+      delete this.mouseDownBind; //delete this.mouseWheelBind;
+
       delete this.resetMouseScrollStateBind;
-      delete this.contextMenuBind;
-      delete this.touchSwipeBind;
+      delete this.contextMenuBind; //delete this.touchSwipeBind;
     }
   }, {
     key: "_fullscreenChange",
