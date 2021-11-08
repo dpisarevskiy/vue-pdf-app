@@ -1338,9 +1338,9 @@ const PDFViewerApplication = {
     };
 
     window.addEventListener("visibilitychange", webViewerVisibilityChange);
-    // window.addEventListener("wheel", webViewerWheel, {
-    //   passive: false
-    // });
+    window.addEventListener("wheel", webViewerWheel, {
+      passive: false
+    });
     window.addEventListener("click", webViewerClick);
     window.addEventListener("keydown", webViewerKeyDown);
     window.addEventListener("resize", _boundEvents.windowResize);
@@ -1440,7 +1440,7 @@ const PDFViewerApplication = {
       _boundEvents
     } = this;
     window.removeEventListener("visibilitychange", webViewerVisibilityChange);
-    // window.removeEventListener("wheel", webViewerWheel);
+    window.removeEventListener("wheel", webViewerWheel);
     window.removeEventListener("click", webViewerClick);
     window.removeEventListener("keydown", webViewerKeyDown);
     window.removeEventListener("resize", _boundEvents.windowResize);
