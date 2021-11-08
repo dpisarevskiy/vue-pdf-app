@@ -366,23 +366,23 @@ class PDFPresentationMode {
     this.touchSwipeBind = this._touchSwipe.bind(this);
     window.addEventListener("mousemove", this.showControlsBind);
     window.addEventListener("mousedown", this.mouseDownBind);
-    window.addEventListener("wheel", this.mouseWheelBind);
+    // window.addEventListener("wheel", this.mouseWheelBind);
     window.addEventListener("keydown", this.resetMouseScrollStateBind);
     window.addEventListener("contextmenu", this.contextMenuBind);
-    window.addEventListener("touchstart", this.touchSwipeBind);
-    window.addEventListener("touchmove", this.touchSwipeBind);
-    window.addEventListener("touchend", this.touchSwipeBind);
+    // window.addEventListener("touchstart", this.touchSwipeBind);
+    // window.addEventListener("touchmove", this.touchSwipeBind);
+    // window.addEventListener("touchend", this.touchSwipeBind);
   }
 
   _removeWindowListeners() {
     window.removeEventListener("mousemove", this.showControlsBind);
     window.removeEventListener("mousedown", this.mouseDownBind);
-    window.removeEventListener("wheel", this.mouseWheelBind);
+    // window.removeEventListener("wheel", this.mouseWheelBind);
     window.removeEventListener("keydown", this.resetMouseScrollStateBind);
     window.removeEventListener("contextmenu", this.contextMenuBind);
-    window.removeEventListener("touchstart", this.touchSwipeBind);
-    window.removeEventListener("touchmove", this.touchSwipeBind);
-    window.removeEventListener("touchend", this.touchSwipeBind);
+    // window.removeEventListener("touchstart", this.touchSwipeBind);
+    // window.removeEventListener("touchmove", this.touchSwipeBind);
+    // window.removeEventListener("touchend", this.touchSwipeBind);
     delete this.showControlsBind;
     delete this.mouseDownBind;
     delete this.mouseWheelBind;
