@@ -50339,15 +50339,16 @@ var PDFPresentationMode = /*#__PURE__*/function () {
       this.mouseDownBind = this._mouseDown.bind(this); //this.mouseWheelBind = this._mouseWheel.bind(this);
 
       this.resetMouseScrollStateBind = this._resetMouseScrollState.bind(this);
-      this.contextMenuBind = this._contextMenu.bind(this); //this.touchSwipeBind = this._touchSwipe.bind(this);
-
+      this.contextMenuBind = this._contextMenu.bind(this);
+      this.touchSwipeBind = this._touchSwipe.bind(this);
       window.addEventListener("mousemove", this.showControlsBind);
       window.addEventListener("mousedown", this.mouseDownBind); //window.addEventListener("wheel", this.mouseWheelBind);
 
       window.addEventListener("keydown", this.resetMouseScrollStateBind);
-      window.addEventListener("contextmenu", this.contextMenuBind); // window.addEventListener("touchstart", this.touchSwipeBind);
-      // window.addEventListener("touchmove", this.touchSwipeBind);
-      // window.addEventListener("touchend", this.touchSwipeBind);
+      window.addEventListener("contextmenu", this.contextMenuBind);
+      window.addEventListener("touchstart", this.touchSwipeBind);
+      window.addEventListener("touchmove", this.touchSwipeBind);
+      window.addEventListener("touchend", this.touchSwipeBind);
     }
   }, {
     key: "_removeWindowListeners",
@@ -50356,15 +50357,16 @@ var PDFPresentationMode = /*#__PURE__*/function () {
       window.removeEventListener("mousedown", this.mouseDownBind); //window.removeEventListener("wheel", this.mouseWheelBind);
 
       window.removeEventListener("keydown", this.resetMouseScrollStateBind);
-      window.removeEventListener("contextmenu", this.contextMenuBind); // window.removeEventListener("touchstart", this.touchSwipeBind);
-      // window.removeEventListener("touchmove", this.touchSwipeBind);
-      // window.removeEventListener("touchend", this.touchSwipeBind);
-
+      window.removeEventListener("contextmenu", this.contextMenuBind);
+      window.removeEventListener("touchstart", this.touchSwipeBind);
+      window.removeEventListener("touchmove", this.touchSwipeBind);
+      window.removeEventListener("touchend", this.touchSwipeBind);
       delete this.showControlsBind;
       delete this.mouseDownBind; //delete this.mouseWheelBind;
 
       delete this.resetMouseScrollStateBind;
-      delete this.contextMenuBind; //delete this.touchSwipeBind;
+      delete this.contextMenuBind;
+      delete this.touchSwipeBind;
     }
   }, {
     key: "_fullscreenChange",
