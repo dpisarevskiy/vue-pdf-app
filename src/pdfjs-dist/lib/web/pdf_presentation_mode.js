@@ -363,15 +363,15 @@ class PDFPresentationMode {
     //this.mouseWheelBind = this._mouseWheel.bind(this);
     this.resetMouseScrollStateBind = this._resetMouseScrollState.bind(this);
     this.contextMenuBind = this._contextMenu.bind(this);
-    //this.touchSwipeBind = this._touchSwipe.bind(this);
+    this.touchSwipeBind = this._touchSwipe.bind(this);
     window.addEventListener("mousemove", this.showControlsBind);
     window.addEventListener("mousedown", this.mouseDownBind);
     //window.addEventListener("wheel", this.mouseWheelBind);
     window.addEventListener("keydown", this.resetMouseScrollStateBind);
     window.addEventListener("contextmenu", this.contextMenuBind);
-    // window.addEventListener("touchstart", this.touchSwipeBind);
-    // window.addEventListener("touchmove", this.touchSwipeBind);
-    // window.addEventListener("touchend", this.touchSwipeBind);
+    window.addEventListener("touchstart", this.touchSwipeBind);
+    window.addEventListener("touchmove", this.touchSwipeBind);
+    window.addEventListener("touchend", this.touchSwipeBind);
   }
 
   _removeWindowListeners() {
@@ -380,15 +380,15 @@ class PDFPresentationMode {
     //window.removeEventListener("wheel", this.mouseWheelBind);
     window.removeEventListener("keydown", this.resetMouseScrollStateBind);
     window.removeEventListener("contextmenu", this.contextMenuBind);
-    // window.removeEventListener("touchstart", this.touchSwipeBind);
-    // window.removeEventListener("touchmove", this.touchSwipeBind);
-    // window.removeEventListener("touchend", this.touchSwipeBind);
+    window.removeEventListener("touchstart", this.touchSwipeBind);
+    window.removeEventListener("touchmove", this.touchSwipeBind);
+    window.removeEventListener("touchend", this.touchSwipeBind);
     delete this.showControlsBind;
     delete this.mouseDownBind;
     //delete this.mouseWheelBind;
     delete this.resetMouseScrollStateBind;
     delete this.contextMenuBind;
-    //delete this.touchSwipeBind;
+    delete this.touchSwipeBind;
   }
 
   _fullscreenChange() {
