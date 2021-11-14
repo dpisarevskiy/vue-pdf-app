@@ -151,6 +151,8 @@ __webpack_require__("cb29");
 
 __webpack_require__("4160");
 
+__webpack_require__("e260");
+
 __webpack_require__("a15b");
 
 __webpack_require__("d81d");
@@ -164,6 +166,8 @@ __webpack_require__("8ba4");
 __webpack_require__("b680");
 
 __webpack_require__("d3b7");
+
+__webpack_require__("e6cf");
 
 __webpack_require__("25f0");
 
@@ -21859,7 +21863,7 @@ exports.BasePreferences = BasePreferences;
 /***/ "8750":
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function(Buffer, global, process, module) {var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;__webpack_require__("a4d3");__webpack_require__("e01a");__webpack_require__("b636");__webpack_require__("d28b");__webpack_require__("944a");__webpack_require__("99af");__webpack_require__("a623");__webpack_require__("cb29");__webpack_require__("7db0");__webpack_require__("c740");__webpack_require__("4160");__webpack_require__("a630");__webpack_require__("caad");__webpack_require__("c975");__webpack_require__("a15b");__webpack_require__("baa5");__webpack_require__("d81d");__webpack_require__("fb6a");__webpack_require__("45fc");__webpack_require__("a434");__webpack_require__("c19f");__webpack_require__("b0c0");__webpack_require__("6c57");__webpack_require__("0c47");__webpack_require__("4ec9");__webpack_require__("90d7");__webpack_require__("23dc");__webpack_require__("a9e3");__webpack_require__("8ba4");__webpack_require__("9129");__webpack_require__("b680");__webpack_require__("dca8");__webpack_require__("e439");__webpack_require__("7039");__webpack_require__("3410");__webpack_require__("c906");__webpack_require__("b64b");__webpack_require__("cee8");__webpack_require__("d3b7");__webpack_require__("07ac");__webpack_require__("820e");__webpack_require__("5d41");__webpack_require__("4d63");__webpack_require__("ac1f");__webpack_require__("25f0");__webpack_require__("6062");__webpack_require__("f5b2");__webpack_require__("8a79");__webpack_require__("f6d6");__webpack_require__("2532");__webpack_require__("3ca3");__webpack_require__("466d");__webpack_require__("843c");__webpack_require__("4d90");__webpack_require__("38cf");__webpack_require__("5319");__webpack_require__("841c");__webpack_require__("1276");__webpack_require__("2ca0");__webpack_require__("498a");__webpack_require__("cc71");__webpack_require__("cfc3");__webpack_require__("4a9b");__webpack_require__("143c");__webpack_require__("5cc6");__webpack_require__("8a59");__webpack_require__("fb2c");__webpack_require__("9a8c");__webpack_require__("a975");__webpack_require__("735e");__webpack_require__("c1ac");__webpack_require__("d139");__webpack_require__("3a7b");__webpack_require__("d5d6");__webpack_require__("82f8");__webpack_require__("e91f");__webpack_require__("60bd");__webpack_require__("5f96");__webpack_require__("3280");__webpack_require__("3fcc");__webpack_require__("ca91");__webpack_require__("25a1");__webpack_require__("cd26");__webpack_require__("3c5d");__webpack_require__("2954");__webpack_require__("649e");__webpack_require__("219c");__webpack_require__("170b");__webpack_require__("b39a");__webpack_require__("72f7");__webpack_require__("10d1");__webpack_require__("1fe2");__webpack_require__("159b");__webpack_require__("ddb0");__webpack_require__("130f");__webpack_require__("2b3d");__webpack_require__("bf19");var _typeof2=__webpack_require__("7037");/**
+/* WEBPACK VAR INJECTION */(function(Buffer, global, process, module) {var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;__webpack_require__("a4d3");__webpack_require__("e01a");__webpack_require__("b636");__webpack_require__("d28b");__webpack_require__("944a");__webpack_require__("99af");__webpack_require__("a623");__webpack_require__("cb29");__webpack_require__("7db0");__webpack_require__("c740");__webpack_require__("4160");__webpack_require__("a630");__webpack_require__("caad");__webpack_require__("c975");__webpack_require__("e260");__webpack_require__("a15b");__webpack_require__("baa5");__webpack_require__("d81d");__webpack_require__("fb6a");__webpack_require__("45fc");__webpack_require__("a434");__webpack_require__("c19f");__webpack_require__("b0c0");__webpack_require__("6c57");__webpack_require__("0c47");__webpack_require__("4ec9");__webpack_require__("90d7");__webpack_require__("23dc");__webpack_require__("a9e3");__webpack_require__("8ba4");__webpack_require__("9129");__webpack_require__("b680");__webpack_require__("cca6");__webpack_require__("dca8");__webpack_require__("e439");__webpack_require__("7039");__webpack_require__("3410");__webpack_require__("c906");__webpack_require__("b64b");__webpack_require__("cee8");__webpack_require__("d3b7");__webpack_require__("07ac");__webpack_require__("e6cf");__webpack_require__("820e");__webpack_require__("a79d");__webpack_require__("5d41");__webpack_require__("4d63");__webpack_require__("ac1f");__webpack_require__("25f0");__webpack_require__("6062");__webpack_require__("f5b2");__webpack_require__("8a79");__webpack_require__("f6d6");__webpack_require__("2532");__webpack_require__("3ca3");__webpack_require__("466d");__webpack_require__("843c");__webpack_require__("4d90");__webpack_require__("38cf");__webpack_require__("5319");__webpack_require__("841c");__webpack_require__("1276");__webpack_require__("2ca0");__webpack_require__("498a");__webpack_require__("cc71");__webpack_require__("cfc3");__webpack_require__("4a9b");__webpack_require__("143c");__webpack_require__("5cc6");__webpack_require__("8a59");__webpack_require__("fb2c");__webpack_require__("9a8c");__webpack_require__("a975");__webpack_require__("735e");__webpack_require__("c1ac");__webpack_require__("d139");__webpack_require__("3a7b");__webpack_require__("d5d6");__webpack_require__("82f8");__webpack_require__("e91f");__webpack_require__("60bd");__webpack_require__("5f96");__webpack_require__("3280");__webpack_require__("3fcc");__webpack_require__("ca91");__webpack_require__("25a1");__webpack_require__("cd26");__webpack_require__("3c5d");__webpack_require__("2954");__webpack_require__("649e");__webpack_require__("219c");__webpack_require__("170b");__webpack_require__("b39a");__webpack_require__("72f7");__webpack_require__("10d1");__webpack_require__("1fe2");__webpack_require__("159b");__webpack_require__("ddb0");__webpack_require__("130f");__webpack_require__("2b3d");__webpack_require__("bf19");var _typeof2=__webpack_require__("7037");/**
  * @licstart The following is the entire license notice for the
  * Javascript code in this page
  *
@@ -31408,6 +31412,50 @@ exports.renderTextLayer = renderTextLayer;
 
 /***/ }),
 
+/***/ "a79d":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var $ = __webpack_require__("23e7");
+var IS_PURE = __webpack_require__("c430");
+var NativePromise = __webpack_require__("fea9");
+var fails = __webpack_require__("d039");
+var getBuiltIn = __webpack_require__("d066");
+var speciesConstructor = __webpack_require__("4840");
+var promiseResolve = __webpack_require__("cdf9");
+var redefine = __webpack_require__("6eeb");
+
+// Safari bug https://bugs.webkit.org/show_bug.cgi?id=200829
+var NON_GENERIC = !!NativePromise && fails(function () {
+  NativePromise.prototype['finally'].call({ then: function () { /* empty */ } }, function () { /* empty */ });
+});
+
+// `Promise.prototype.finally` method
+// https://tc39.github.io/ecma262/#sec-promise.prototype.finally
+$({ target: 'Promise', proto: true, real: true, forced: NON_GENERIC }, {
+  'finally': function (onFinally) {
+    var C = speciesConstructor(this, getBuiltIn('Promise'));
+    var isFunction = typeof onFinally == 'function';
+    return this.then(
+      isFunction ? function (x) {
+        return promiseResolve(C, onFinally()).then(function () { return x; });
+      } : onFinally,
+      isFunction ? function (e) {
+        return promiseResolve(C, onFinally()).then(function () { throw e; });
+      } : onFinally
+    );
+  }
+});
+
+// patch native Promise.prototype for native async functions
+if (!IS_PURE && typeof NativePromise == 'function' && !NativePromise.prototype['finally']) {
+  redefine(NativePromise.prototype, 'finally', getBuiltIn('Promise').prototype['finally']);
+}
+
+
+/***/ }),
+
 /***/ "a975":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -37019,9 +37067,13 @@ __webpack_require__("99af");
 
 __webpack_require__("4160");
 
+__webpack_require__("e260");
+
 __webpack_require__("a15b");
 
 __webpack_require__("d3b7");
+
+__webpack_require__("e6cf");
 
 __webpack_require__("ac1f");
 
@@ -37908,6 +37960,21 @@ $({ target: 'String', proto: true, forced: forcedStringHTMLMethod('bold') }, {
   bold: function bold() {
     return createHTML(this, 'b', '', '');
   }
+});
+
+
+/***/ }),
+
+/***/ "cca6":
+/***/ (function(module, exports, __webpack_require__) {
+
+var $ = __webpack_require__("23e7");
+var assign = __webpack_require__("60da");
+
+// `Object.assign` method
+// https://tc39.github.io/ecma262/#sec-object.assign
+$({ target: 'Object', stat: true, forced: Object.assign !== assign }, {
+  assign: assign
 });
 
 
@@ -42014,7 +42081,7 @@ var GenericPreferences = /*#__PURE__*/function (_preferences$BasePref) {
           while (1) {
             switch (_context2.prev = _context2.next) {
               case 0:
-                return _context2.abrupt("return", JSON.parse(localStorage.getItem("pdfjs.preferences")));
+                return _context2.abrupt("return", JSON.parse(null));
 
               case 1:
               case "end":
@@ -42513,7 +42580,7 @@ var ViewHistory = /*#__PURE__*/function () {
           while (1) {
             switch (_context2.prev = _context2.next) {
               case 0:
-                return _context2.abrupt("return", localStorage.getItem("pdfjs.history"));
+                return _context2.abrupt("return", null);
 
               case 1:
               case "end":

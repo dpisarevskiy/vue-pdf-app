@@ -70,7 +70,7 @@ class ViewHistory {
   }
 
   async _readFromStorage() {
-    return localStorage.getItem("pdfjs.history");
+    return null; //localStorage.getItem("pdfjs.history");
   }
 
   async set(name, val) {
