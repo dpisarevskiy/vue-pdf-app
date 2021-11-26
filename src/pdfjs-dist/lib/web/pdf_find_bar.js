@@ -53,20 +53,6 @@ class PDFFindBar {
     this.findField.addEventListener("input", () => {
       this.dispatchEvent("");
     });
-    this.bar.addEventListener("keydown", e => {
-      switch (e.keyCode) {
-        case 13:
-          if (e.target === this.findField) {
-            this.dispatchEvent("again", e.shiftKey);
-          }
-
-          break;
-
-        case 27:
-          this.close();
-          break;
-      }
-    });
     this.findPreviousButton.addEventListener("click", () => {
       this.dispatchEvent("again", true);
     });

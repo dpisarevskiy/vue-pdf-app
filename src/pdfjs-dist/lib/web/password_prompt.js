@@ -44,11 +44,6 @@ class PasswordPrompt {
     this.reason = null;
     this.submitButton.addEventListener("click", this.verify.bind(this));
     this.cancelButton.addEventListener("click", this.close.bind(this));
-    this.input.addEventListener("keydown", e => {
-      if (e.keyCode === 13) {
-        this.verify();
-      }
-    });
     this.overlayManager.register(this.overlayName, this.container, this.close.bind(this), true);
   }
 
